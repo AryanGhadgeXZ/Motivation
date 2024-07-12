@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@400;700&display=swap');
+
+
+*{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body{
+    background-image: url("Marble.jpg");    
+    background-color: beige;
+    font-size: 20px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    text-shadow: black 0px 0px 7px;
+    background-color: rgba(0, 0, 0, 0.14);
+    margin-top: 0%;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.div{
+    width: 350px;
+    margin: 10vw;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(192, 192, 192, 0.53);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(88, 88, 88, 0.9) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;   
+}
+
+.div:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(88, 88, 88, 0.9) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;   
+    transition: 0.3s;
+}
+
+
+.btn{
+    border: 0;
+    background-color: rgb(92, 92, 92);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(88, 88, 88, 0.9) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: rgb(0, 0, 0);
+    font-size: 25px ;
+    border-radius: 10px;
+    padding: 6px;
+    width: 100%;
+}
+
+.btn:hover{
+    color: white;
+    transition: 0.5s;
+    background-color: hsl(221, 50%, 36%);
+    
+}
+.h21{
+    padding-bottom: 4px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 300;
+    
+}
+
+.h22{
+    margin-bottom: 0%;
+    margin-top: 0%;
+    color: rgb(29, 29, 124);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+p{
+    margin: 2px;
+}
+
+.fr{
+    color: rgb(255, 208, 0);
+    background-color: rgb(92, 92, 92);
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 35px solid rgb(29, 29, 124);
+  }

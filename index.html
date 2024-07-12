@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivational msg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div class="div">
+            <p>* * *</p>
+            <h2 id="msg" class="h21"></h2>
+            <h2 id="auth" class="h22"></h2>
+        <h1>Motivational App</h1>
+        <form onsubmit="gm()">
+            <input type="submit" value="Get Msg" class="btn">
+        </form>
+        </div>
+
+            <div class="arrow-down"></div>
+        
+        
+
+        <script>
+            function gm(){
+                event.preventDefault();
+                let msg = document.getElementById("msg")
+                let auth = document.getElementById("auth")
+                let url = "http://api.quotable.io/random";
+                fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    msg.innerHTML = ('" ') + data.content + ('"');
+                    auth.innerHTML = ("- ") + data.author + (' ');
+                })
+                .catch(err => msg.innerHTML = "issue" + err);
+            }
+        </script>
+    </center>
+
+    <script>
+
+    </script>
+    
+</body>
+</html>
